@@ -1,0 +1,521 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>接口说明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="CONFIG.html" />
+    
+    
+    <link rel="prev" href="INPUT.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="DOWNLOAD.html">
+            
+                <a href="DOWNLOAD.html">
+            
+                    
+                    SDK下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="INPUT.html">
+            
+                <a href="INPUT.html">
+            
+                    
+                    接入方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="INTERFACE.html">
+            
+                <a href="INTERFACE.html">
+            
+                    
+                    接口说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="CONFIG.html">
+            
+                <a href="CONFIG.html">
+            
+                    
+                    产品参数配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="PROGARD.html">
+            
+                <a href="PROGARD.html">
+            
+                    
+                    混淆过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../IOS/">
+            
+                <a href="../IOS/">
+            
+                    
+                    IOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >接口说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x8BE6;&#x89E3;">&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x8BE6;&#x89E3;</h1>
+<h2 id="21&#x57FA;&#x7840;&#x529F;&#x80FD;&#x6A21;&#x5757;">2.1&#x57FA;&#x7840;&#x529F;&#x80FD;&#x6A21;&#x5757;</h2>
+<h3 id="211-&#x521D;&#x59CB;&#x5316;">2.1.1 &#x521D;&#x59CB;&#x5316;</h3>
+<pre><code>CoreNative.init();
+</code></pre><h3 id="212-&#x8BBE;&#x7F6E;&#x9000;&#x51FA;&#x7684;&#x4EE3;&#x7801;">2.1.2 &#x8BBE;&#x7F6E;&#x9000;&#x51FA;&#x7684;&#x4EE3;&#x7801;</h3>
+<pre><code>PayNative.setGameExitCallback(new Runnable() {
+
+            @Override
+            public void run() {
+                // TODO Auto-generated method stub
+                CoreNative.gameExit();//&#x8BE5;&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x8C03;&#x7528;
+                currentActivity.finish();
+                System.exit(0);
+            }
+        });
+</code></pre><h3 id="213-&#x4F7F;&#x7528;&#x5151;&#x6362;&#x7801;">2.1.3 &#x4F7F;&#x7528;&#x5151;&#x6362;&#x7801;</h3>
+<pre><code>String dhm = &quot;111111&quot;;
+CDKey.use(dhm,new CDKey.DhmCallback() {
+
+    @Override
+    public void onFinish(CDKey.DhmData data) {
+        // TODO Auto-generated method stub
+        showToast(data.message);
+    }
+});
+</code></pre><h3 id="214-&#x6253;&#x5F00;&#x6D3B;&#x52A8;&#x9875;&#x9762;">2.1.4 &#x6253;&#x5F00;&#x6D3B;&#x52A8;&#x9875;&#x9762;</h3>
+<pre><code>com.vigame.Activity.open();
+</code></pre><h3 id="215-&#x6253;&#x5F00;&#x516C;&#x544A;">2.1.5 &#x6253;&#x5F00;&#x516C;&#x544A;</h3>
+<pre><code>Notice.open();
+</code></pre><h3 id="216-&#x6253;&#x5F00;&#x6392;&#x884C;&#x699C;">2.1.6 &#x6253;&#x5F00;&#x6392;&#x884C;&#x699C;</h3>
+<pre><code>Rank.open();
+</code></pre><h3 id="217-&#x6253;&#x5F00;&#x7528;&#x6237;&#x534F;&#x8BAE;">2.1.7 &#x6253;&#x5F00;&#x7528;&#x6237;&#x534F;&#x8BAE;</h3>
+<pre><code>UserAgreement.open();
+</code></pre><p>&#x6CE8;&#xFF1A;&#x7528;&#x6237;&#x534F;&#x8BAE;&#x7684;&#x5185;&#x5BB9;&#x53EF;&#x901A;&#x8FC7;assets/agrement.html&#x4FEE;&#x6539;  </p>
+<h2 id="22-&#x8BA1;&#x8D39;&#x76F8;&#x5173;">2.2 &#x8BA1;&#x8D39;&#x76F8;&#x5173;</h2>
+<h3 id="221-&#x521D;&#x59CB;&#x5316;">2.2.1 &#x521D;&#x59CB;&#x5316;</h3>
+<pre><code>PayNative.init();
+</code></pre><h3 id="222-&#x8BBE;&#x7F6E;&#x652F;&#x4ED8;&#x56DE;&#x8C03;">2.2.2 &#x8BBE;&#x7F6E;&#x652F;&#x4ED8;&#x56DE;&#x8C03;</h3>
+<pre><code>PayNative.setPayResultCallback(new PayManager.PayCallback() {
+
+    @Override
+    public void onPayFinish(PayParams params) {
+        // TODO Auto-generated method stub
+        switch (params.getPayResult()){
+            //&#x652F;&#x4ED8;&#x6210;&#x529F;
+            case PayDef.PAY_RESULT_SUCCESS:
+                break;
+            //&#x652F;&#x4ED8;&#x5931;&#x8D25;
+            case PayDef.PAY_RESULT_FAIL:
+                break;
+            //&#x53D6;&#x6D88;&#x652F;&#x4ED8;
+            case PayDef.PAY_RESULT_CANCEL:
+                break;
+        }
+    }
+
+    @Override
+    public void onInitPayAgentFinish(BasePayAgent arg0) {
+        // TODO Auto-generated method stub
+
+    }
+});
+</code></pre><h3 id="223-&#x83B7;&#x53D6;&#x652F;&#x4ED8;&#x6309;&#x94AE;&#x7C7B;&#x578B;">2.2.3 &#x83B7;&#x53D6;&#x652F;&#x4ED8;&#x6309;&#x94AE;&#x7C7B;&#x578B;</h3>
+<pre><code>PayNative.getButtonType(payID);
+</code></pre><p>payID--&#x8BA1;&#x8D39;&#x70B9;ID<br>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;0 &#x8D2D;&#x4E70;  1&#x9886;&#x53D6;</p>
+<h3 id="224-sdk&#x4E2D;&#x662F;&#x5426;&#x652F;&#x6301;&#x9000;&#x51FA;">2.2.4 SDK&#x4E2D;&#x662F;&#x5426;&#x652F;&#x6301;&#x9000;&#x51FA;</h3>
+<pre><code>PayNative.isExitGame();
+</code></pre><p>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;true-SDK&#x652F;&#x6301;&#x9000;&#x51FA;  false-&#x4E0D;&#x652F;&#x6301;&#x9000;&#x51FA;</p>
+<h3 id="225-&#x8C03;&#x7528;&#x9000;&#x51FA;">2.2.5 &#x8C03;&#x7528;&#x9000;&#x51FA;</h3>
+<pre><code>PayNative.openExitGame();
+</code></pre><p><em>&#x5EFA;&#x8BAE;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;&#x52A0;&#x5165;&#xFF1A;</em></p>
+<pre><code>if(PayNative.isExitGame()){
+    //&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x5F39;&#x51FA;&#x6E20;&#x9053;&#x7684;&#x9000;&#x51FA;
+    PayNative.openExitGame();
+}
+else{
+    //&#x8FD9;&#x91CC;&#x5F39;&#x51FA;&#x5F15;&#x64CE;&#x7684;&#x9000;&#x51FA;&#x754C;&#x9762;&#x6216;&#x8005;&#x4E0D;&#x5904;&#x7406;
+    ...
+}
+</code></pre><h3 id="226-&#x83B7;&#x53D6;&#x6240;&#x5728;&#x7684;&#x5E02;&#x573A;&#x7C7B;&#x578B;">2.2.6 &#x83B7;&#x53D6;&#x6240;&#x5728;&#x7684;&#x5E02;&#x573A;&#x7C7B;&#x578B;</h3>
+<pre><code>PayNative.getMarketType();
+</code></pre><p>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;&#x53C2;&#x8003;PayDef&#x4E2D;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;eg:PayDef.PAY_TYPE_MM  </p>
+<h3 id="227-&#x83B7;&#x53D6;&#x793C;&#x5305;&#x63A7;&#x5236;&#x4FE1;&#x606F;">2.2.7 &#x83B7;&#x53D6;&#x793C;&#x5305;&#x63A7;&#x5236;&#x4FE1;&#x606F;</h3>
+<pre><code>PayNative.getGiftCtrlFlagUse(int ctrl);
+</code></pre><p>ctrl&#xFF1A;&#x63A7;&#x5236;&#x53C2;&#x6570;&#xFF08;<br>1-&#x65B0;&#x624B;&#x793C;&#x5305; - &#x8FDB;&#x5165;&#x6E38;&#x620F;&#x9996;&#x9875;&#x65F6;&#x5982;&#x679C;&#x6CA1;&#x8D2D;&#x4E70;&#x8FC7;&#x65B0;&#x624B;&#x793C;&#x5305;&#x5219;&#x5F39;&#x51FA;<br>2-&#x5FEB;&#x51B2; - &#x7528;&#x6237;&#x865A;&#x62DF;&#x8D27;&#x5E01;&#x4E0D;&#x8DB3;&#x65F6;&#x5F39;&#x51FA;<br>3-&#x9650;&#x65F6;&#x793C;&#x5305; - &#x8FDB;&#x5165;&#x6E38;&#x620F;&#x9996;&#x9875;&#x65F6;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x4E70;&#x8FC7;&#x65B0;&#x624B;&#x793C;&#x5305;&#x5219;&#x5F39;&#x51FA;<br>4-&#x8FC7;&#x5173;&#x5956;&#x52B1; - &#x8FC7;&#x5173;&#x65F6;&#x5F39;&#x51FA;<br>5-vip&#x793C;&#x5305; - &#x8FDB;&#x5165;&#x5173;&#x5361;&#x9009;&#x62E9;&#x9875;&#x65F6;&#x5F39;&#x51FA;
+6-&#x4ECA;&#x65E5;&#x7279;&#x4EF7;<br>7-&#x5B9E;&#x60E0;&#x5927;&#x793C;&#x5305;<br>8-&#x5546;&#x57CE;&#xFF09; </p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;ctrl&#x63A7;&#x5236;&#x53C2;&#x6570;</p>
+<h3 id="228-&#x8C03;&#x7528;&#x652F;&#x4ED8;">2.2.8 &#x8C03;&#x7528;&#x652F;&#x4ED8;</h3>
+<pre><code>PayNative.orderPay(id);
+</code></pre><p>id:&#x8BA1;&#x8D39;&#x70B9;ID  </p>
+<pre><code>orderPay(int id,String userdata);
+</code></pre><p>id:&#x6E38;&#x620F;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x8BA1;&#x8D39;&#x70B9;id<br>userdata:&#x7528;&#x6237;&#x6570;&#x636E;  </p>
+<pre><code>orderPay(int id,int price&#xFF0C;String userdata);
+</code></pre><p>id:&#x6E38;&#x620F;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x8BA1;&#x8D39;&#x70B9;id<br>price:&#x8BA1;&#x8D39;&#x70B9;&#x7684;&#x4EF7;&#x683C;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x5206;&#x3002;<br>userdata:&#x7528;&#x6237;&#x6570;&#x636E;  </p>
+<pre><code>orderPay(int id, int price, int payType&#xFF0C;String userdata);
+</code></pre><p>id:&#x6E38;&#x620F;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x8BA1;&#x8D39;&#x70B9;id<br>price:&#x8BA1;&#x8D39;&#x70B9;&#x7684;&#x4EF7;&#x683C;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x5206;&#x3002;
+payType:&#x6307;&#x5B9A;&#x7684;&#x652F;&#x4ED8;&#x7C7B;&#x578B;&#x3002;eg:PayDef.PAY_TYPE_MM
+userdata:&#x7528;&#x6237;&#x6570;&#x636E;  </p>
+<h3 id="229-&#x662F;&#x5426;&#x9700;&#x8981;&#x6709;&#x66F4;&#x591A;&#x6E38;&#x620F;&#x6309;&#x94AE;">2.2.9 &#x662F;&#x5426;&#x9700;&#x8981;&#x6709;&#x66F4;&#x591A;&#x6E38;&#x620F;&#x6309;&#x94AE;</h3>
+<pre><code>PayNative.isMoreGame();
+</code></pre><h3 id="2210-&#x6253;&#x5F00;&#x66F4;&#x591A;&#x6E38;&#x620F;">2.2.10 &#x6253;&#x5F00;&#x66F4;&#x591A;&#x6E38;&#x620F;</h3>
+<pre><code>PayNative.openMoreGame();
+</code></pre><h2 id="23-&#x5E7F;&#x544A;&#x76F8;&#x5173;">2.3 &#x5E7F;&#x544A;&#x76F8;&#x5173;</h2>
+<h3 id="231-&#x521D;&#x59CB;&#x5316;">2.3.1 &#x521D;&#x59CB;&#x5316;</h3>
+<pre><code>ADNative.init();
+</code></pre><h3 id="232-&#x8BBE;&#x7F6E;&#x5E7F;&#x544A;&#x6253;&#x5F00;&#x56DE;&#x8C03;">2.3.2 &#x8BBE;&#x7F6E;&#x5E7F;&#x544A;&#x6253;&#x5F00;&#x56DE;&#x8C03;</h3>
+<pre><code>//&#x8BBE;&#x7F6E;&#x5E7F;&#x544A;&#x56DE;&#x8C03;
+ADNative.setAdResultCallback(new ADManager.AdParamCallback() {
+
+    @Override
+    public void onStatusChanged(ADParam arg0, int status) {
+        // TODO Auto-generated method stub
+        Log.d(TAG,&quot;onStatusChanged:&quot;+status);
+    }
+
+    @Override
+    public void onRequestAddGameCoin(ADParam arg0, int arg1, int arg2,
+            String arg3) {
+        // TODO Auto-generated method stub
+        Log.d(TAG,&quot;onRequestAddGameCoin&quot;);
+
+    }
+
+    @Override
+    public void onOpenResult(ADParam adParam, int result) {
+        // TODO Auto-generated method stub
+        Log.d(TAG,&quot;onOpenResult:&quot;+result);
+        //&#x5224;&#x65AD;&#x5E7F;&#x544A;&#x7C7B;&#x578B;&#x662F;&#x5426;&#x662F;&#x89C6;&#x9891;
+        if(adParam.getType().equals(ADDef.AD_TypeName_Video)){
+
+        }
+
+        if(result== ADParam.ADOpenResult_Success){//&#x5E7F;&#x544A;&#x6253;&#x5F00;&#x6210;&#x529F;
+
+        }
+        else {//&#x5E7F;&#x544A;&#x6253;&#x5F00;&#x5931;&#x8D25;
+
+        }
+    }
+});
+</code></pre><p>&#x56DE;&#x8C03;&#x65B9;&#x6CD5;&#x8BF4;&#x660E;&#xFF1A;<br><strong>AdParamCallback .onOpenResult(onOpenResult(ADParam adParam
+, int result))</strong>  //&#x5E7F;&#x544A;&#x6253;&#x5F00;&#x7ED3;&#x679C;&#x901A;&#x77E5;<br>adParam:&#x5E7F;&#x544A;&#x76F8;&#x5173;&#x53C2;&#x6570;&#xFF08;&#x53EF;&#x83B7;&#x53D6;&#x5E7F;&#x544A;ID&#xFF0C;&#x5E7F;&#x544A;&#x72B6;&#x6001;&#xFF0C;&#x5E7F;&#x544A;&#x4EE3;&#x7406;&#x5546;&#xFF09;
+result:&#x5E7F;&#x544A;&#x6253;&#x5F00;&#x7ED3;&#x679C;&#xFF1A;0&#x6210;&#x529F;  1&#x5931;&#x8D25;  2&#x53D6;&#x6D88;</p>
+<p><strong>AdParamCallback.onRequestAddGameCoin(ADParam adParam, int result, int num, String reason)</strong>//&#x79EF;&#x5206;&#x5899;&#x7C7B;&#x5E7F;&#x544A;&#x7684;&#x94BB;&#x77F3;&#x5956;&#x52B1;&#x901A;&#x77E5;<br>adParam:&#x5E7F;&#x544A;&#x76F8;&#x5173;&#x53C2;&#x6570;<br>result&#xFF1A;&#x5956;&#x52B1;&#x7ED3;&#x679C;&#x7C7B;&#x578B;&#xFF1A;0&#x6210;&#x529F;  1&#x5931;&#x8D25;  2&#x53D6;&#x6D88;<br>num&#xFF1A;&#x5956;&#x52B1;&#x6570;&#x91CF;<br>reason&#xFF1A;&#x901A;&#x77E5;&#x5B57;&#x7B26;&#x4E32;  </p>
+<h3 id="233-&#x6253;&#x5F00;&#x5E7F;&#x544A;">2.3.3 &#x6253;&#x5F00;&#x5E7F;&#x544A;</h3>
+<pre><code>ADNative.openAd(String adPositionName);
+</code></pre><p>adPositionName&#xFF1A;             &#x5E7F;&#x544A;&#x4F4D;&#x540D;&#x79F0;  </p>
+<h3 id="234-&#x67E5;&#x770B;&#x5E7F;&#x544A;&#x662F;&#x5426;&#x5C31;&#x7EEA;">2.3.4 &#x67E5;&#x770B;&#x5E7F;&#x544A;&#x662F;&#x5426;&#x5C31;&#x7EEA;</h3>
+<pre><code>ADNative.isAdReady(String adPositionName);
+</code></pre><pre><code>ADNative.isAdReady2(String adPositionName, String type);
+</code></pre><p>adPositionName:&#x5E7F;&#x544A;&#x4F4D;&#x540D;&#x79F0;<br>type: &#x5E7F;&#x544A;&#x7C7B;&#x578B; (plaque-&#x63D2;&#x5C4F; video-&#x89C6;&#x9891; banner-&#x5E7F;&#x544A;&#x6761; wall-&#x79EF;&#x5206;&#x5899; splash  &#x542F;&#x52A8;&#x753B;)</p>
+<h3 id="235-&#x5173;&#x95ED;&#x5E7F;&#x544A;">2.3.5 &#x5173;&#x95ED;&#x5E7F;&#x544A;</h3>
+<pre><code>ADNative.closeAd(String adPositioname);
+</code></pre><p>adPositionName&#xFF1A;             &#x5E7F;&#x544A;&#x4F4D;&#x540D;&#x79F0;</p>
+<h3 id="236-&#x83B7;&#x53D6;&#x89C6;&#x9891;&#x9650;&#x5236;&#x6B21;&#x6570;">2.3.6 &#x83B7;&#x53D6;&#x89C6;&#x9891;&#x9650;&#x5236;&#x6B21;&#x6570;</h3>
+<pre><code>ADNative.getVideoLimitOpenNum();
+</code></pre><p>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;&#x53EF;&#x64AD;&#x653E;&#x6B21;&#x6570;&#xFF0C;&#x4E3A;-1&#x8868;&#x793A;&#x65E0;&#x9650;&#x6B21;&#x3002;</p>
+<h3 id="237-&#x5E7F;&#x544A;&#x4F4D;&#x662F;&#x5426;&#x5DF2;&#x6253;&#x5F00;">2.3.7 &#x5E7F;&#x544A;&#x4F4D;&#x662F;&#x5426;&#x5DF2;&#x6253;&#x5F00;</h3>
+<p>&#x53EF;&#x7528;&#x4E8E;&#x9632;&#x6B62;&#x7528;&#x6237;&#x8FDE;&#x7EED;&#x591A;&#x6B21;&#x70B9;&#x51FB;&#x5E7F;&#x544A;&#x6309;&#x94AE;</p>
+<pre><code>ADNative.isAdOpen(String adPositionName);
+</code></pre><p>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;true-&#x5E7F;&#x544A;&#x5DF2;&#x88AB;&#x6253;&#x5F00;   false-&#x5E7F;&#x544A;&#x672A;&#x88AB;&#x6253;&#x5F00;</p>
+<h3 id="238-&#x67D0;&#x5173;&#x5361;&#x662F;&#x5426;&#x51FA;&#x73B0;&#x5E7F;&#x544A;">2.3.8 &#x67D0;&#x5173;&#x5361;&#x662F;&#x5426;&#x51FA;&#x73B0;&#x5E7F;&#x544A;</h3>
+<pre><code>ADNative.isAdBeOpenInLevel(String adPositionname,int lv);
+</code></pre><p>&#x53C2;&#x6570;&#xFF1A;  adPositionname-&#x5E7F;&#x544A;&#x4F4D;&#x540D;&#x79F0;  lv-&#x5173;&#x5361;&#x7F16;&#x53F7;(1-&#x65E0;&#x9650;)<br>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;true-&#x53EF;&#x51FA;&#x73B0;   false-&#x4E0D;&#x53EF;&#x51FA;&#x73B0;</p>
+<h2 id="24--&#x7EDF;&#x8BA1;&#x76F8;&#x5173;">2.4  &#x7EDF;&#x8BA1;&#x76F8;&#x5173;</h2>
+<h3 id="241-&#x521D;&#x59CB;&#x5316;">2.4.1 &#x521D;&#x59CB;&#x5316;</h3>
+<pre><code>TJNative.init();
+</code></pre><h3 id="242-&#x81EA;&#x5B9A;&#x4E49;&#x7EDF;&#x8BA1;">2.4.2 &#x81EA;&#x5B9A;&#x4E49;&#x7EDF;&#x8BA1;</h3>
+<pre><code>TJNative.event(String eventId);
+TJNative.event(String eventId, String label);
+TJNative.event(String eventId, HashMap&lt;String, String&gt; attributes);
+</code></pre><p>eventId: &#x4E3A;&#x5F53;&#x524D;&#x7EDF;&#x8BA1;&#x7684;&#x4E8B;&#x4EF6;ID<br>label&#xFF1A;&#x4E8B;&#x4EF6;&#x7684;&#x6807;&#x7B7E;&#x5C5E;&#x6027;</p>
+<h2 id="25-&#x4E92;&#x63A8;&#x76F8;&#x5173;">2.5 &#x4E92;&#x63A8;&#x76F8;&#x5173;</h2>
+<h3 id="251-&#x521D;&#x59CB;&#x5316;">2.5.1 &#x521D;&#x59CB;&#x5316;</h3>
+<pre><code>XYXNative.init();
+</code></pre><h3 id="252-&#x83B7;&#x53D6;&#x4E92;&#x63A8;&#x6570;&#x636E;">2.5.2 &#x83B7;&#x53D6;&#x4E92;&#x63A8;&#x6570;&#x636E;</h3>
+<pre><code>XYXNative.getConfig();
+</code></pre><h3 id="253-&#x4E0A;&#x62A5;&#x4E92;&#x63A8;&#x5C55;&#x793A;">2.5.3 &#x4E0A;&#x62A5;&#x4E92;&#x63A8;&#x5C55;&#x793A;</h3>
+<pre><code>XYXConfig config = XYXNative.getConfig();
+ArrayList&lt;XYXItem&gt; list = config.getItemList();
+if (list != null &amp;&amp; list.size() &gt; 0) {
+    XYXItem item = list.get(0);
+    config.exposureShow(item);
+}
+</code></pre><h3 id="254-&#x54CD;&#x5E94;&#x4E92;&#x63A8;&#x70B9;&#x51FB;">2.5.4 &#x54CD;&#x5E94;&#x4E92;&#x63A8;&#x70B9;&#x51FB;</h3>
+<pre><code>XYXConfig config = XYXNative.getConfig();
+ArrayList&lt;XYXItem&gt; list = config.getItemList();
+if (list != null &amp;&amp; list.size() &gt; 0) {
+    XYXItem item = list.get(0);
+    config.handleClick(item);
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="INPUT.html" class="navigation navigation-prev " aria-label="Previous page: 接入方法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="CONFIG.html" class="navigation navigation-next " aria-label="Next page: 产品参数配置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"接口说明","level":"1.2.3","depth":2,"next":{"title":"产品参数配置","level":"1.2.4","depth":2,"path":"Android/CONFIG.md","ref":"Android/CONFIG.md","articles":[]},"previous":{"title":"接入方法","level":"1.2.2","depth":2,"path":"Android/INPUT.md","ref":"Android/INPUT.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Android/INTERFACE.md","mtime":"2019-01-21T06:17:30.137Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-15T09:52:26.539Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
